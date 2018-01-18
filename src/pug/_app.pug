@@ -1,0 +1,15 @@
+- var count = 20
+
+.app
+  span#task
+    span#a 1
+    span &nbsp;+&nbsp;
+    span#b 2
+    span &nbsp;=&nbsp;
+    span#res ?
+      input(id='res_input' class='hidden')
+  .bg
+    #ruler
+      - for (var x = 0; x <= count; x++)
+        span(id= 'sm_' + x)
+          .number= x

@@ -1,0 +1,83 @@
+.app
+	position: absolute
+  bottom: 0
+  background-color: green
+  color: red !important
+  .bg
+    margin-bottom: 10px
+    width: 875px
+    height: 83px
+    border-radius: 10px
+    background: linear-gradient(to bottom, #fef5cd 0%,#f6e6c8 100%)
+    display: flex
+    align-content: center
+    justify-content: center
+    #ruler
+      width: 800px
+      height: auto
+      display: flex
+      justify-content: space-around
+      margin-top: 10px
+      position: relative
+      &:after
+        content: ''
+        width: 10px
+        height: 10px
+        position: absolute
+        top: 7.5px
+        right: 3px
+        border-right: 1px solid black
+        border-bottom: 1px solid black
+        transform: rotate(-45deg)
+        [id^='sm_']
+          background-color: #ffc6c6
+          height: 25px
+          width: 40px
+          font-family: 'Officina-Bo'
+          font-size: 17px
+          position: relative
+          &:before
+            content: ''
+            width: 1px
+            height: 15px
+            background-color: black
+            position: absolute
+            top: 5px
+            left: 0
+          &:nth-child(5n - 4)
+            font-size: 22px
+            color: red
+            &:before
+            width: 2px
+            height: 17px
+            top: 4px
+            left: -1px
+          &:after
+            content: ''
+            width: 100%
+            height: 1px
+            background-color: black
+            position: absolute
+            top: 50%
+            left: 0
+      span
+        position: relative
+        .number
+          position: absolute
+          bottom: -20px
+          left: -20px
+          width: 40px
+          text-align: center
+          height: 17px
+          
+// .app
+// 	#task
+// 		position: absolute
+// 		left: 0
+// 		right: 0
+// 		top: 0
+// 		#a
+// 		#b
+// 		#res
+// 		#res_input
+//======
