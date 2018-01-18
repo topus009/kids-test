@@ -28,12 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
       if (i === 2) {
         console.info(i);
         console.info(e);
-        const color = ['#16cfff', '#00a6d1', '#0019d7'];
+        const color = ['#ffc620', '#f29200', '#c65c00'];
         renderArrow(e.a, i, color[0]);
         renderArrow(e.b, i, color[1]);
         renderArrow(e.res, i, color[2]);
       }
     });
   }());
-  // ===================
+  // ==================
 });
