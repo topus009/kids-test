@@ -1,6 +1,4 @@
-import config from './_config.js';
-
-export default function app() {
+export default function calcTasks(config) {
   console.warn(config);
   const {
     a,
@@ -32,5 +30,5 @@ export default function app() {
 
   const newData = data.filter(arr => arr);
 
-  console.warn(newData);
+  return newData;
 }

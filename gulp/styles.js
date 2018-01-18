@@ -17,7 +17,7 @@ const postCSSPlugins = [
 ];
 
 gulp.task('styles', () => (
-  gulp.src('/src/styles/style.sass')
+  gulp.src('./src/styles/style.sass')
     .pipe(sourcemaps.init())
     .pipe(sass(sassOptions)
       .on('error', sass.logError))
@@ -27,5 +27,5 @@ gulp.task('styles', () => (
       this.emit('end');
     })
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('/temp/css'))
+    .pipe(gulp.dest('./src/temp/css'))
 ));

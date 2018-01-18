@@ -6,6 +6,6 @@ gulp.task('copy:images', () => (
 ));
 
 gulp.task('copy:fonts', () => (
-  gulp.src('./src/fonts/**/*.{otf}')
+  gulp.src('./src/fonts/**/*.{eot,otf,ttf,woff}')
     .pipe(gulp.dest('./src/temp/fonts/'))
 ));
