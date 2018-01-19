@@ -1,21 +1,24 @@
 {
-  "name": "gulp-starter",
-  "version": "0.2.0",
+  "name": "kids-test",
+  "version": "0.2.1",
   "description": "kids-test",
   "main": "",
   "repository": {
     "type": "git",
     "url": "https://github.com/topus009/kids-test.git"
   },
+  "homepage": "https://topus009.github.io/kids-test.git",
   "scripts": {
     "build": "gulp build:dist",
     "preview": "gulp preview:dist",
     "start": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d build:dist"
   },
   "author": "Sergey Topolov",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "postcss-normalize": "^4.0.0"
   },
   "devDependencies": {
