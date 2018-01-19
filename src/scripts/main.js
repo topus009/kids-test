@@ -1,15 +1,15 @@
 /* eslint-disabl */
-import config from './_config.js';
-import calcTasks from './_calcTasks.js';
-import renderArrow from './_renderArrow';
-import step_1 from './_step_1';
+import config from './parts/_config.js';
+import calcTasks from './parts/_calcTasks.js';
+import renderArrow from './parts/_renderArrow';
+import step_1 from './parts/_step_1';
 
 document.addEventListener('DOMContentLoaded', function () {
-  // ==================
-  let COUNT = 0;
+  // ===================
+  const COUNT = 0;
 
   (function main() {
-    let RESULT = null;
+    // let RESULT = null;
     const newData = calcTasks(config);
     const e = newData[COUNT];
     const pos = e.a * 38;
