@@ -359,4 +359,10 @@ body {
   font-weight: bold;
 }
 
+.app #end {
+  text-align: center;
+  font-size: 2em;
+  font-family: 'OfficinaSansWinCTT Bold', arial;
+}
+
 /*# sourceMappingURL=style.css.map */
