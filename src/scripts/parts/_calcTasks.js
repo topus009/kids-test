@@ -14,7 +14,7 @@ export default function calcTasks(config) {
     return Math.round((Math.random() * (max - min)) + min);
   }
 
-  while (counter <= 2) {
+  while (counter <= 10) {
     counter++;
     rA = rand(a[0], a[1]);
     rB = rand(b[0], b[1]);
