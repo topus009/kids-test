@@ -14,12 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     for (let i = 0; i < newData.length; i++) {
       const e = newData[i];
+      const pos = e.a * 38;
+      const RESULT = false;
 
       block_a.innerHTML = e.a;
       block_b.innerHTML = e.b;
-
-      const pos = e.a * 38;
-      const RESULT = false;
 
       step_1(e, i, renderArrow, block_a, block_b, pos);
       if (!RESULT) {
