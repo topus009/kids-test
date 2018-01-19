@@ -2,7 +2,6 @@ export default function renderArrow(task, index, pos) {
   const div = document.createElement('div');
   div.id = 'curve_' + index;
   div.className = 'curve';
-  // const top = 40;
   const ds = div.style;
   task *= 0.949;
   ds.width = (task * 40) + 'px';
@@ -15,13 +14,9 @@ export default function renderArrow(task, index, pos) {
   ds.borderColor = '#E33E91';
 
   document.getElementById('ruler').appendChild(div);
-  // ===============
   const input = document.createElement('input');
   input.id = 'input_' + index;
   input.maxLength = '2';
   input.className = 'input';
   div.appendChild(input);
 }
-// =================
-// ==================
-

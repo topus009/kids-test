@@ -1,10 +1,10 @@
 - var count = 20
 
-.app
+#app.app
   #task
-    span#a 1
+    span#a a
     span &nbsp;+&nbsp;
-    span#b 2
+    span#b b
     span &nbsp;=&nbsp;
     span#res ?
       input(id='res_input' class='hidden' maxlength='2')
@@ -13,4 +13,3 @@
       - for (var x = 0; x <= count; x++)
         span(id= 'sm_' + x)
           .number= x
-      //- #arrow

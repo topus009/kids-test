@@ -1,5 +1,4 @@
 export default function calcTasks(config) {
-  console.warn(config);
   const {
     a,
     b,
@@ -15,7 +14,7 @@ export default function calcTasks(config) {
     return Math.round((Math.random() * (max - min)) + min);
   }
 
-  while (counter <= 20) {
+  while (counter <= 2) {
     counter++;
     rA = rand(a[0], a[1]);
     rB = rand(b[0], b[1]);
