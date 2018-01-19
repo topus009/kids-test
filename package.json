@@ -13,7 +13,7 @@
     "preview": "gulp preview:dist",
     "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d build:dist"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Sergey Topolov",
   "license": "MIT",

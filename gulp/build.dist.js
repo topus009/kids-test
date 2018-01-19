@@ -4,24 +4,33 @@ const imagemin = require('gulp-imagemin');
 const usemin = require('gulp-usemin');
 const rev = require('gulp-rev');
 
+// gulp.task('copyGeneralFiles', ['clean:dist'], () => (
+//   gulp.src([
+//     './src/**/*',
+//     './src/images',
+//     './src/images/**',
+//     './src/fonts',
+//     './src/fonts/**',
+//     '!./src/pug',
+//     '!./src/pug/**',
+//     '!./src/scripts',
+//     '!./src/scripts/**',
+//     '!./src/styles',
+//     '!./src/styles/**',
+//     '!./src/temp',
+//     '!./src/temp/**',
+//   ])
+//     .pipe(gulp.dest('./dist'))
+// ));
+
 gulp.task('copyGeneralFiles', ['clean:dist'], () => (
   gulp.src([
-    './src/**/*',
-    './src/images',
-    './src/images/**',
-    './src/fonts',
-    './src/fonts/**',
-    '!./src/pug',
-    '!./src/pug/**',
-    '!./src/scripts',
-    '!./src/scripts/**',
-    '!./src/styles',
-    '!./src/styles/**',
-    '!./src/temp',
-    '!./src/temp/**',
+    './src/temp/**/*',
+    '!./src/temp/css/style.css.map',
   ])
     .pipe(gulp.dest('./dist'))
 ));
+
 
 gulp.task('optimizeImages', ['clean:dist'], () => (
   gulp.src([

@@ -5,7 +5,7 @@ import renderArrow from './parts/_renderArrow';
 import step_1 from './parts/_step_1';
 
 document.addEventListener('DOMContentLoaded', function () {
-  // ===================
+  // ===============
   const COUNT = 0;
 
   (function main() {
